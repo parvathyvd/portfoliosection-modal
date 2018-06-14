@@ -1,0 +1,130 @@
+
+.btn,
+.btn:link,
+.btn:visited {
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+  transition: all .2s;
+  position: relative;
+}
+.btn:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.btn:active{
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+.btn::after{
+  content: '';
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s;
+}
+.btn:hover::after{
+  transform: scale(1.5);
+  opacity: 0;
+}
+.btn-white::after{
+  background-color: white;
+}
+
+
+.btn-white{
+  background-color: white;
+  color: #777;
+  &:hover{
+    color: $light-green;
+  }
+}
+
+
+.btn-text{
+  &,
+  &:link,
+  &:visited{
+    color: $primary-color;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid $primary-color;
+    padding: 3px;
+    font-size: 3.5rem;
+    transition: all .3s;
+  }
+  &:hover{
+     background-color: $color-white;
+     color: $secondary-color;
+     padding: 2rem;
+     box-shadow: .2rem 1rem 1rem rgba($color-black,0.2);
+     transform: translateY(-10px);
+  }
+  &:active{
+    box-shadow: .2rem .5rem .5rem rgba($color-black,0.2);
+    transform: translateY(0px);
+  }
+}
+
+.btn-sm-text{
+  &,
+  &:link,
+  &:visited{
+    color: $primary-color;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid $primary-color;
+    padding: 3px;
+    font-size: 1.5rem;
+    transition: all .3s;
+  }
+  &:hover{
+     background-color: $color-white;
+     color: $secondary-color;
+     padding: 2rem;
+     box-shadow: .2rem 1rem 1rem rgba($color-black,0.2);
+     transform: translateY(-10px);
+  }
+  &:active{
+    box-shadow: .2rem .5rem .5rem rgba($color-black,0.2);
+    transform: translateY(0px);
+  }
+}
+
+
+.btn-brown{
+  &,
+  &:link,
+  &:visited{
+    color: $primary-color;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid $primary-color;
+    padding: 3px;
+    font-size: 3.5rem;
+    transition: all .3s;
+  }
+  &:hover{
+     background-color: $dark-brown;
+     color: $color-white;
+     padding: 2rem;
+     box-shadow: .2rem 1rem 1rem rgba($color-black,0.2);
+     transform: translateY(-10px);
+  }
+  &:active{
+    box-shadow: .2rem .5rem .5rem rgba($color-black,0.2);
+    transform: translateY(0px);
+  }
+}
+
+.testimonial{
+  display: block;
+  margin: 0 auto;
+}

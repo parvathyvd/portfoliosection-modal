@@ -1,0 +1,37 @@
+
+*,::after,::before,p{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+img{
+  max-width: 100%;
+}
+
+
+html {
+  width: 100%;
+  margin: 0 auto;
+ /* Setting font-size to 62.5% allows 1rem to be 10px */
+ // Setting font size allows us to size the entire page this is why it stays in base and does not go into typography
+ font-size: 62.5%;
+ // Media queries
+ @include respond(tab-land) {
+ font-size: 56.25%; //1rem = 9px, 9/16 = 56.25%;
+ }
+ @include respond(tab-port) {
+ font-size: 50%; //1rem = 8px, 8/16 = 50%
+ }
+ @include respond(phone) {
+ font-size: 45%; //1rem = 4.8px
+ }
+ @include respond(big-desktop) {
+ font-size: 75%; //1rem = 12px 12/16 = 75%;
+ }
+}
+
+.seperator{
+  margin-top: 3rem;
+}

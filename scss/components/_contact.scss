@@ -1,0 +1,38 @@
+.contact-section{
+  line-height: 5.5rem;
+
+
+  &__bg{
+    padding: 10rem 0;
+    background-color: $light-brown;
+    color: $color-white;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 65%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 65%, 0% 100%);
+    @include respond(tab-port){
+      -webkit-clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+      clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+    }
+    @include respond(phone){
+      -webkit-clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+      clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+    }
+  }
+
+}
+
+.address-block{
+  display: block;
+  line-height: 5rem;
+
+ &--icon{
+
+  &::after{
+    content: '';
+    padding-right: 1rem;
+
+    }
+  }
+  &:hover, &:focus{
+    color: $primary-color;
+  }
+}

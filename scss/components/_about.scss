@@ -1,0 +1,52 @@
+.about-section{
+  width: 100%;
+  padding: 7rem 0 10rem 0;
+  backface-visibility: hidden;
+  background-image: linear-gradient(to left bottom, $color-grey-1, $color-white);
+  margin-bottom: 5rem;
+
+  &__button{
+    display: inline-block;
+    margin-top: 8rem;
+  }
+
+
+.about-section__block{
+
+    img{
+      display: block;
+      position: relative;
+    }
+    &--image{
+      width: 40rem;
+      height: 40rem;
+      position: relative;
+      float: left;
+      -webkit-clip-path: circle(50% at 50% 50%);
+      clip-path: circle(50% at 50% 50%);
+      shape-outside:circle(50% at 50% 50%);
+      margin-right: 5rem;
+      backface-visibility: hidden;
+      @include respond(phone){
+        display: block;
+        margin: 0 auto;
+        margin-right: 0rem;
+        margin-bottom: 2rem;
+
+      }
+    }
+    &--caption{
+      position: absolute;
+      display: inline-block;
+      top:50%;
+      left:50%;
+    }
+  &--text{
+
+    @include respond(phone){
+      display: inline-block;
+    }
+
+    }
+  }
+}

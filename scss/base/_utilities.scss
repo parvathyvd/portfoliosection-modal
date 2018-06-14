@@ -1,0 +1,26 @@
+.u-text-center{
+  text-align: center;
+}
+.u-paragraph-mb-4{
+  margin-bottom: 2rem;
+}
+.u-margin-top-10{
+  margin-top: 10rem;
+}
+.u-margin-bottom-10{
+  margin-bottom: 10rem;
+}
+.web-link{
+  color: $light-brown;
+  &:hover{
+    color: white;
+    text-decoration: none;
+  }
+}
+.web-link-white{
+  color: $color-white;
+  &:hover{
+    color: $primary-color;
+    text-decoration: none;
+  }
+}
